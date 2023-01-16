@@ -3,18 +3,18 @@ body{
     grid-template-rows: repeat(4, auto);
     grid-template-columns: repeat(2, auto);
     grid-template-areas: 
-    "header header"
     "nav nav"
+    "header header"
     "main main"
     "footer footer";
-}
-
-header{
-    grid-area: header;
+    background-color: #d59458;
+    margin: 0;
 }
 
 nav{
     grid-area: nav;
+    background-color: #7695C3;
+    border-radius: 70%;
 }
 
 nav ul{
@@ -22,7 +22,6 @@ nav ul{
     grid-template-columns: repeat(3, 1fr);
     padding: 0;
     margin: 0;
-    background-color: dimgray;
 }
 
 nav li{
@@ -36,6 +35,16 @@ nav a{
     color: rgb(255, 255, 255);
 }
 
+header{
+    grid-area: header;
+    background-color: #D77F4F;
+    border-radius: 80%;
+}
+
+header h1{
+    text-align: center;
+}
+
 main{
     grid-area: main;
 }
@@ -44,20 +53,48 @@ main li{
     list-style-type: none;
     text-align: center;
     font-size: 150%;
+    padding-top: 15pt;
+}
+
+main a{
+    text-decoration: none;
 }
 
 .Afrika{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-top: 15px;
 }
 
-main h1{
+main h2, h3, img{
     display: block;
     margin: 0 auto;
     width: 50%;
     text-align: center;
 }
 
+main p{
+    font-size: 3ex;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-right: 2em;
+    padding-left: 2em;
+    text-align: center;
+}
+
+main img{
+    border-radius: 5%;
+}
+
 footer{
     grid-area: footer;
+    text-align: right;
+    background-color: #D77F4F;
+    font-weight: bold;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p{
+    padding-right: 15px;
 }
