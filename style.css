@@ -28,7 +28,7 @@ nav ul{
 nav li{
     list-style-type: none;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 2em;
 }
 
 nav a{
@@ -38,6 +38,24 @@ nav a{
 
 main{
     grid-area: main;
+}
+
+main li{
+    list-style-type: none;
+    text-align: center;
+    font-size: 150%;
+}
+
+.Afrika{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+main h1{
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
 }
 
 footer{
